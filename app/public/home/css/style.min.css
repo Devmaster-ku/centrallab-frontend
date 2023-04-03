@@ -1,0 +1,84 @@
+:root {
+    --header-outer-height: 80px;
+    --header-contact-height: 343px;
+    --header-inner-height: 75px;
+    --header-banner-height: 50px;
+    --header-height-difference: calc(
+        var(--header-outer-height) - var(--header-inner-height)
+    );
+    --header-outer-height-mobile: 55px;
+    --header-inner-height-mobile: 50px;
+    --header-height-difference-mobile: calc(
+        var(--header-outer-height-mobile) - var(--header-inner-height-mobile)
+    );
+}
+.logo {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.kulogo {
+    height: var(--header-banner-height);
+    width: 50px;
+    padding-right: 15px;
+    background-image: url('/home/images/ku_en.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner {
+    height: var(--header-banner-height);
+    width: 158px;
+    background-image: url('/home/images/banner_central_lab.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.app-brand-text,.agro-name-text {
+    font-size: 16px;
+}
+.agro-name-text {
+    font-size: 0.65rem;
+}
+.ku-color-green {
+    color: #006664;
+}
+.ku-color2 {
+    color: #b2bb1e;
+}
+.bg-btn-lang {
+    background-color: #006664;
+}
+.agro-color {
+    background: #CF29A3;
+    background: linear-gradient(to right, #CF29A3 0%, #006664 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.img-contact {
+    height: var(--header-contact-height);
+    width: 410px;
+    background-image: url('/home/images/contact_us.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-postnews {
+    height: 48px;
+    width: 56px;
+    background-image: url('/home/images/post_comm.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}

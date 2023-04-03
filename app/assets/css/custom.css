@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+    url(~/assets/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Inter";
+    src: local("Inter"),
+    url(~/assets/fonts/Inter/static/inter-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "NotoSansThai";
+    src: local("NotoSansThai"),
+    url(~/assets/fonts/Noto_Sans_Thai/static/NotoSansThai/NotoSansThai-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "BaiJamjuree";
+    src: local("BaiJamjuree"),
+    url(~/assets/fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Sarabun";
+    src: local("Sarabun"),
+    url(~/assets/fonts/Sarabun/Sarabun-Regular.ttf) format("truetype");
+}
+
+html, body {
+    font-family: "NotoSansThai",sans-serif;
+    font-size: 17px;
+    background-color: rgb(250 250 250);
+}
+.inter-fonts {
+    font-family: "Inter";
+}
+.notosansthai-fonts {
+    font-family: "NotoSansThai";
+}
+.baijamjuree-fonts {
+    font-family: "BaiJamjuree";
+}
+.sarabun-fonts {
+    font-family: "Sarabun";
+}

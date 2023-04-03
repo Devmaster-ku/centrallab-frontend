@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  nuxt:
+    build: ./app/
+    container_name: slms-app
+    restart: always
+    ports:
+      - "3000:3000"
+    # command:
+    #   "npm run start"
+
+  nginx:
+    image: nginx:1.23.3
+    container_name: nginx_slms-app
+    ports:
+      - "8084:80"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - nuxt
